@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catck&kick</title>
+</head>
+<body>
+    <div class="container">
+    <h1> 
+      <style></style><b class="term"> TENTER DE GAGNER JUSQU'Â 50£!</b>
+    </h1>
+    <h2>
+        <b class="term"> Comment ça marche ?</b>
+        <p>Un jeu <b class="term">100 % gagnant</b>  Remplis le formulaire, réponds à 2 questions et attrape <b class="term">3 stickers</b>. Le <b class="term">sticker d’or</b>, aléatoire, peut t’offrir <b class="term">50 €</b> en magasin !</p>
+    </h2>
+    </div>
+
+</body>
+<form action="/ma-page-de-traitement" method="post">
+  <ul>
+    <li>
+      <label for="name">Nom&nbsp;:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">E-mail&nbsp;:</label>
+      <input type="email" id="mail" name="user_mail" />
+    </li>
+    <li>
+      <label for="name">Prénom&nbsp;:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <label for="AGE">Age:</label>
+    <input list="age-options" id="age-input" name="user_age" />
+    <datalist id="age-options">
+        <option value="18-25"></option>
+        <option value="26-35"></option>
+        <option value="36-45"></option>
+        <option value="+45"></option>
+    </datalist>
+    </ul>
+    <fieldset>
+  <div>
+    <input type="checkbox"  name="accept_terms" value="true" checked />
+    <label for="accept_terms">J’atteste avoir 18 ans ou plus (ou 16 ans et plus, avec l’accord de mon représentant légal) et j’ai lu et j’accepte le
+ règlement.</label>
+  </div>
+ 
+
+  <div>
+    <input type="checkbox"  name="accept_marketing" value="true" checked />
+    <label for="accept_marketing">.“J’accepte que mes données soient collectées et utilisées uniquement pour ce jeu, conformément à la politique de confidentialité.”*.”</label>
+  </div>
+
+  <div>
+    <input type="checkbox"  name="accept_participation" value="true" checked />
+    <label for="accept_participation">““J’accepte de recevoir des offres et actualités par email de Foot Locker.””</label>
+  </div>
+</fieldset>
+
+    <button type="submit">Participer</button>
+
+ 
+
+</html>
