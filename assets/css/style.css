@@ -1,7 +1,9 @@
 :root {
-    --bg-color: #EFEFEF; 
+    --bg-color: #EFEFEF;
+    --bg-black-color: #232323;
     --red-color: #E52935; 
     --text-black: #232323;
+    --text-white: #FAFAFA;
     --blue-back: #7dbce6;
 }
 
@@ -20,11 +22,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--bg-color);
-    color: #232323;
+    color: var(--text-black);
     font-size: 28px;
     overflow: hidden;
     padding: 1rem;
-    gap: 8rem;
+    gap: 4rem;
 }
 
 
@@ -49,15 +51,19 @@ header { display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 8px; 
+    gap: 8px;
 }
 
 a{
     text-decoration: none;
 }
 
+h3 {
+    font-size: clamp(20px, 6vw, 24px);
+}
+
 p {
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: clamp(20px, 2vw, 24px);
     font-family: "Inter", sans-serif;
     font-style: normal;
 }
@@ -76,6 +82,29 @@ strong {
     font-weight: normal;
     color: var(--red-color);
 }
+
+.cta-button {
+    display: block;
+    text-align: center;
+    width: 60%;
+    max-width: 20rem;
+    background-color: var(--bg-black-color);
+    color: var(--text-white);
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.1s;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.55),
+    inset -2px -2px 0px 0px #ffffff2e;
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
 
 /* //////// MAIN PAGE ///////// */
 
@@ -96,8 +125,7 @@ strong {
 
 .instructions {
     text-align: center;
-    font-size: 0.9rem;
-    color: #444;
+    color: var(--text-black);
     margin-bottom: 30px;
     line-height: 1.4;
 }
@@ -110,6 +138,19 @@ strong {
 
 
 /* Formulaire */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -118,9 +159,8 @@ label {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: var(--text-black);
-    margin-bottom: 5px;
 }
 
 input[type="text"],
@@ -130,10 +170,9 @@ select {
     background: transparent;
     border: none;
     border-bottom: 2px solid #999;
-    padding: 5px 0;
     font-size: 1rem;
     outline: none;
-    border-radius: 0; 
+    border-radius: 0;
 }
 
 input:focus, select:focus {
@@ -180,29 +219,24 @@ input:focus, select:focus {
     border-color: var(--red-color);
 }
 
-.cta-button {
-    display: block;
-    width: 100%;
-    background-color: #222;
-    color: white;
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: transform 0.1s;
+.text{
+    font-size: clamp(14px, 6vw, 16px);
 }
 
-.cta-button:active {
-    transform: scale(0.98);
-}
 
 
 /* ////// PREFERENCES PAGE ////// */
+
+.main_preference {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     background-color: var(--bg-color);
-    width: 360px;
+    max-width: 360px;
     padding: 40px 20px;
     text-align: center;
     position: relative;
@@ -244,6 +278,8 @@ button:active {
     font-size: clamp(24px, 6vw, 24px);
     background-color: var(--red-color);
     border-radius: 5px;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 0px 0px #ffffff80;
 }
 
 .btn-play {
@@ -257,18 +293,33 @@ button:active {
 }
 
 .btn-back {
+    width: 64px;
+    height: 64px;
     background-color: var(--blue-back);
-    color: white;
+    color: var(--text-white);
     font-size: 2rem;
     padding: 5px 15px;
-    border-radius: 8px;
-    box-shadow: 6px 6px 0px var(--gray-shadow);
+    border-radius: 5px;
+    box-shadow: 5px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.footer-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 /* ////// RESULT PAGE ////// */
 
-main {
+.main_result {
     width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
 }
 
 .social_networks {
@@ -285,10 +336,6 @@ main {
     gap: .5rem;
 }
 
-.social_networks h3 {
-    font-size: clamp(24px, 3vw, 24px);
-}
-
 .social_networks p {
     text-align: center;
 }
@@ -298,7 +345,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 45vw;
+    width: 70vw;
     gap: 6rem;
     container-type: inline-size;
 }
@@ -328,6 +375,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 
 .button {
     text-align: center;
@@ -362,8 +410,6 @@ main {
     z-index: 10;
     pointer-events: none;
 }
-
-
 
 .right {
     object-position: right;
@@ -481,10 +527,11 @@ main {
     }
 
     .congratulation {
-        gap: 1rem;
+        gap: 6rem;
     }
 }
 
+/* Medium-Small Screen */
 @media (max-width: 1040px) {
     header {
         gap: 2rem;
@@ -583,6 +630,21 @@ main {
     .game {
         width: 90%;
         flex-direction: column-reverse;
+    }
+
+    /* Preference page */
+    .button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    }
+
+    .question-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
 }
