@@ -2,7 +2,7 @@
     --bg-color: #EFEFEF; 
     --red-color: #E52935; 
     --text-black: #232323;
-    --border-color: #888;
+    --blue-back: #7dbce6;
 }
 
 * {
@@ -24,6 +24,7 @@ body {
     font-size: 28px;
     overflow: hidden;
     padding: 1rem;
+    gap: 8rem;
 }
 
 
@@ -49,6 +50,10 @@ header { display: flex;
     align-items: center;
     text-align: center;
     gap: 8px; 
+}
+
+a{
+    text-decoration: none;
 }
 
 p {
@@ -104,7 +109,7 @@ strong {
 
 
 
-
+/* Formulaire */
 .form-group {
     margin-bottom: 20px;
 }
@@ -191,6 +196,73 @@ input:focus, select:focus {
 
 .cta-button:active {
     transform: scale(0.98);
+}
+
+
+/* ////// PREFERENCES PAGE ////// */
+.container {
+    background-color: var(--bg-color);
+    width: 360px;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.question-block {
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    align-items: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: none !important;
+}
+
+.btn-red {
+    height:5rem;
+    width: 15rem;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    color: var(--bg-color);
+    font-size: clamp(24px, 6vw, 24px);
+    background-color: var(--red-color);
+    border-radius: 5px;
+}
+
+.btn-play {
+    background-color: var(--black);
+    color: white;
+    width: 90%;
+    padding: 15px;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px 0px var(--gray-shadow);
+}
+
+.btn-back {
+    background-color: var(--blue-back);
+    color: white;
+    font-size: 2rem;
+    padding: 5px 15px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 0px var(--gray-shadow);
 }
 
 /* ////// RESULT PAGE ////// */
