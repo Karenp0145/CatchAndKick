@@ -8,61 +8,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-    <h1> 
-      <style></style><b class="term"> TENTER DE GAGNER JUSQU'Â 50£!</b>
-    </h1>
-    <h2>
-        <b class="term"> Comment ça marche ?</b>
-        <p>Un jeu <b class="term">100 % gagnant</b>  Remplis le formulaire, réponds à 2 questions et attrape <b class="term">3 stickers</b>. Le <b class="term">sticker d’or</b>, aléatoire, peut t’offrir <b class="term">50 €</b> en magasin !</p>
-    </h2>
+    <div class="compaign-container">
+        
+        <img src="stickers-tl.png" class="sticker sticker-tl" alt="">
+        <img src="stickers-tr.png" class="sticker sticker-tr" alt="">
+        <img src="stickers-bl.png" class="sticker sticker-bl" alt="">
+        <img src="stickers-br.png" class="sticker sticker-br" alt="">
+        
+    <div class="content">
+            <header>
+                <h3 class="brand-sub">CATCH & KICK</h3>
+                <h1 class="main-title">TENTE DE GAGNER <br>JUSQU'À <span class="highlight">50 € !</span></h1>
+            </header>
+
+            <div class="instructions">
+                <h4>COMMENT ÇA MARCHE ?</h4>
+                <p>Un jeu <strong>100 % gagnant</strong>. Remplis le formulaire, réponds à 2 questions et attrape <strong>3 stickers</strong>. Le <strong>sticker d'or</strong>, aléatoire, peut t'offrir <strong>50 €</strong> en magasin !</p>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="prenom">PRÉNOM* :</label>
+                    <input type="text" id="prenom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">NOM* :</label>
+                    <input type="text" id="nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL* :</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">AGE* :</label>
+                    <select id="age" required>
+                        <option value="" disabled selected></option>
+                        <option value="18-25">18-25</option>
+                        <option value="25+">25+</option>
+                    </select>
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        <span class="text">"“J’atteste avoir 18 ans ou plus (ou 16 ans et plus, avec l’accord de mon représentant légal) et j’ai lu et j’accepte le" <link rel="stylesheet" href="reglement"></span>
+                    </label>
+                    
+                    <label class="custom-checkbox">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        <span class="text">“J’accepte que mes données soient collectées et utilisées uniquement pour ce jeu, conformément à la politique de confidentialité."</span>
+                    </label>
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="text">“J’accepte de recevoir des offres et actualités par email de Foot Locker."</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="cta-button">PARTICIPER</button>
+            </form>
+        </div>
     </div>
 
 </body>
-<form action="/ma-page-de-traitement" method="post">
-  <ul>
-    <li>
-      <label for="name">Nom&nbsp;:</label>
-      <input type="text" id="name" name="user_name" />
-    </li>
-    <li>
-      <label for="mail">E-mail&nbsp;:</label>
-      <input type="email" id="mail" name="user_mail" />
-    </li>
-    <li>
-      <label for="name">Prénom&nbsp;:</label>
-      <input type="text" id="name" name="user_name" />
-    </li>
-    <label for="AGE">Age:</label>
-    <input list="age-options" id="age-input" name="user_age" />
-    <datalist id="age-options">
-        <option value="18-25"></option>
-        <option value="26-35"></option>
-        <option value="36-45"></option>
-        <option value="+45"></option>
-    </datalist>
-    </ul>
-    <fieldset>
-  <div>
-    <input type="checkbox"  name="accept_terms" value="true" checked />
-    <label for="accept_terms">J’atteste avoir 18 ans ou plus (ou 16 ans et plus, avec l’accord de mon représentant légal) et j’ai lu et j’accepte le
- règlement.</label>
-  </div>
- 
-
-  <div>
-    <input type="checkbox"  name="accept_marketing" value="true" checked />
-    <label for="accept_marketing">.“J’accepte que mes données soient collectées et utilisées uniquement pour ce jeu, conformément à la politique de confidentialité.”*.”</label>
-  </div>
-
-  <div>
-    <input type="checkbox"  name="accept_participation" value="true" checked />
-    <label for="accept_participation">““J’accepte de recevoir des offres et actualités par email de Foot Locker.””</label>
-  </div>
-</fieldset>
-
-    <button type="submit">Participer</button>
-
- 
-
 </html>
