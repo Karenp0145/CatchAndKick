@@ -1,0 +1,120 @@
+:root {
+    --red: #ff0000;
+    --black: #1a1a1a;
+    --gray-shadow: #b0b0b0;
+    --bg-color: #f0f0f0;
+    --blue-back: #7dbce6;
+}
+
+body {
+    background-color: #4a4a4a; /* Fond extérieur */
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--bg-color);
+    width: 360px;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.brand {
+    color: var(--red);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+.question-block {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+button {
+    border: none;
+    font-family: 'Impact', sans-serif;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: none !important;
+}
+
+.btn-red {
+    background-color: var(--red);
+    color: white;
+    width: 80%;
+    padding: 12px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    box-shadow: 6px 6px 0px var(--gray-shadow);
+}
+
+.btn-play {
+    background-color: var(--black);
+    color: white;
+    width: 90%;
+    padding: 15px;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 6px 6px 0px var(--gray-shadow);
+    margin-top: 20px;
+}
+
+.back-container {
+    margin-top: 20px;
+}
+
+.btn-back {
+    background-color: var(--blue-back);
+    color: white;
+    font-size: 2rem;
+    padding: 5px 15px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 0px var(--gray-shadow);
+}
+
+.corner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #ccc; 
+    opacity: 0.5;
+}
+.top-left { top: 0; left: 0; }
+.top-right { top: 0; right: 0; }
+.bottom-left { bottom: 0; left: 0; }
+.bottom-right { bottom: 0; right: 0; }
