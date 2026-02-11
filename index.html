@@ -3,77 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catck&kick</title>
-     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Accueil Catck & Kick</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
     <div class="compaign-container">
-        
-        <img src="stickers-tl.png" class="sticker sticker-tl" alt="">
-        <img src="stickers-tr.png" class="sticker sticker-tr" alt="">
-        <img src="stickers-bl.png" class="sticker sticker-bl" alt="">
-        <img src="stickers-br.png" class="sticker sticker-br" alt="">
-        
-    <div class="content">
-            <header>
-                <h3 class="brand-sub">CATCH & KICK</h3>
-                <h1 class="main-title">TENTE DE GAGNER <br>JUSQU'À <span class="highlight">50 € !</span></h1>
-            </header>
+        <header>
+            <h3 class="brand-sub">CATCH & KICK</h3>
+            <h1 class="main-title">TENTE DE GAGNER <br>JUSQU'À <span class="highlight">50 € !</span></h1>
+        </header>
 
-            <div class="instructions">
-                <h4>COMMENT ÇA MARCHE ?</h4>
-                <p>Un jeu <strong>100 % gagnant</strong>. Remplis le formulaire, réponds à 2 questions et attrape <strong>3 stickers</strong>. Le <strong>sticker d'or</strong>, aléatoire, peut t'offrir <strong>50 €</strong> en magasin !</p>
+        <div class="instructions">
+            <h4>COMMENT ÇA MARCHE ?</h4>
+            <p>Un jeu <strong>100 % gagnant</strong>. Remplis le formulaire, réponds à 2 questions et attrape <strong>3 stickers</strong>.<br>Le <strong>sticker d'or</strong>, aléatoire, peut t'offrir <strong>50 €</strong> en magasin !</p>
+        </div>
+
+        <form class="form" action="./pages/game.html">
+            <div class="form-group">
+                <label for="prenom">PRÉNOM* :</label>
+                <input type="text" id="prenom" required>
             </div>
 
-            <form>
-                <div class="form-group">
-                    <label for="prenom">PRÉNOM* :</label>
-                    <input type="text" id="prenom" required>
-                </div>
+            <div class="form-group">
+                <label for="nom">NOM* :</label>
+                <input type="text" id="nom" required>
+            </div>
 
-                <div class="form-group">
-                    <label for="nom">NOM* :</label>
-                    <input type="text" id="nom" required>
-                </div>
+            <div class="form-group">
+                <label for="email">EMAIL* :</label>
+                <input type="email" id="email" required>
+            </div>
 
-                <div class="form-group">
-                    <label for="email">EMAIL* :</label>
-                    <input type="email" id="email" required>
-                </div>
+            <div class="form-group">
+                <label for="age">AGE* :</label>
+                <select id="age" required>
+                    <option value="" disabled selected></option>
+                    <option value="18-25">18-25</option>
+                    <option value="25+">25+</option>
+                </select>
+            </div>
 
-                <div class="form-group">
-                    <label for="age">AGE* :</label>
-                    <select id="age" required>
-                        <option value="" disabled selected></option>
-                        <option value="18-25">18-25</option>
-                        <option value="25+">25+</option>
-                    </select>
-                </div>
+            <div class="checkbox-group">
+                <label class="custom-checkbox">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    <span class="text">"“J’atteste avoir 18 ans ou plus (ou 16 ans et plus, avec l’accord de mon représentant légal) et j’ai lu et j’accepte le <a rel="stylesheet" href="reglement">règlement</a> "*</span>
+                </label>
+                
+                <label class="custom-checkbox">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    <span class="text">“J’accepte que mes données soient collectées et utilisées uniquement pour ce jeu, conformément à la politique de confidentialité."*</span>
+                </label>
 
-                <div class="checkbox-group">
-                    <label class="custom-checkbox">
-                        <input type="checkbox" required>
-                        <span class="checkmark"></span>
-                        <span class="text">"“J’atteste avoir 18 ans ou plus (ou 16 ans et plus, avec l’accord de mon représentant légal) et j’ai lu et j’accepte le" <link rel="stylesheet" href="reglement"></span>
-                    </label>
-                    
-                    <label class="custom-checkbox">
-                        <input type="checkbox" required>
-                        <span class="checkmark"></span>
-                        <span class="text">“J’accepte que mes données soient collectées et utilisées uniquement pour ce jeu, conformément à la politique de confidentialité."</span>
-                    </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="text">“J’accepte de recevoir des offres et actualités par email de Foot Locker."</span>
+                </label>
+            </div>
 
-                    <label class="custom-checkbox">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        <span class="text">“J’accepte de recevoir des offres et actualités par email de Foot Locker."</span>
-                    </label>
-                </div>
+            <button type="submit" class="cta-button">PARTICIPER</button>
+        </form>
+    </div>
 
-                <button type="submit" class="cta-button">PARTICIPER</button>
-            </form>
-        </div>
+    <img src="./assets/img/Big/stickers_left.png" alt="stickers" class="overlay-stickers left">
+    <img src="./assets/img/Big/stickers_right.png" alt="stickers" class="overlay-stickers right">
+
+    <div class="stickers-container-medium">
+        <img src="./assets/img/Medium/stickers_left_medium.png" alt="stickers" class="overlay-stickers-medium left">
+        <img src="./assets/img/Medium/stickers_right_medium.png" alt="stickers" class="overlay-stickers-medium right">
+    </div>
+
+    <div class="stickers-container-mobile">
+        <img src="./assets/img/Small/Bottom_left_stickers.png" alt="stickers corner" class="sticker bottom-left">
+        <img src="./assets/img/Small/Bottom_right_stickers.png" alt="stickers corner" class="sticker bottom-right">
+        <img src="./assets/img/Small/Top_left_stickers.png" alt="stickers corner" class="sticker top-left">
+        <img src="./assets/img/Small/Top_right_stickers.png" alt="stickers corner" class="sticker top-right">
     </div>
 
 </body>
