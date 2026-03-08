@@ -16,7 +16,7 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ main {
 }
 
 .brand-sub {
-    font-size: clamp(32px, 4vw, 32px);
+    font-size: clamp(24px, 3vw, 32px);
     color: var(--red-color);
 }
 
@@ -52,6 +52,7 @@ header { display: flex;
     align-items: center;
     text-align: center;
     gap: 8px;
+    padding-bottom: 0.5rem;
 }
 
 a{
@@ -63,7 +64,7 @@ h3 {
 }
 
 p {
-    font-size: clamp(20px, 2vw, 24px);
+    font-size: clamp(16px, 2vw, 24px);
     font-family: "Inter", sans-serif;
     font-style: normal;
 }
@@ -95,6 +96,7 @@ strong {
     padding: 15px;
     border: none;
     cursor: pointer;
+    font-size: clamp(24px, 4vw, 64px);
     border-radius: 5px;
     transition: transform 0.1s;
     box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.55),
@@ -222,6 +224,33 @@ input:focus, select:focus {
 .text{
     font-size: clamp(14px, 6vw, 16px);
 }
+/* ////// REGLEMENT PAGE ////// */
+
+.main-rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.rules-container {
+    width: 40%;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-y: scroll;
+    gap: 1rem;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -295,13 +324,15 @@ button:active {
 .btn-back {
     width: 64px;
     height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--blue-back);
     color: var(--text-white);
     font-size: 2rem;
     padding: 5px 15px;
     border-radius: 5px;
     box-shadow: 5px 8px 0px rgba(0, 0, 0, 0.25);
-
 }
 
 .footer-actions{
@@ -535,7 +566,6 @@ button:active {
 @media (max-width: 1040px) {
     header {
         gap: 2rem;
-        padding-bottom: 2rem;
     }
 
     .game {
@@ -574,11 +604,6 @@ button:active {
 @media (max-width: 820px) {
     main {
         gap: 1rem;
-    }
-
-    header {
-        gap: 2rem;
-        padding-bottom: 2rem;
     }
 
     .overlay-stickers {
@@ -647,5 +672,10 @@ button:active {
     align-items: center;
     }
 
+
+    /* Reglement Page */
+    .rules-container {
+        width: 80%;
+    }
 }
 
