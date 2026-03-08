@@ -1,0 +1,74 @@
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dce8f0;
+  font-family: Arial, sans-serif;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* === H2 - "CATCH & KICK" === */
+h2 {
+  color: #e63030;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* === H1 - Titre principal === */
+h1 {
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* === H3 - Titres de section === */
+h3 {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+/* === Paragraphes === */
+p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #2a2a2a;
+  margin-bottom: 16px;
+}
+
+/* === Bouton retour === */
+.back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  background-color: #5a8fa8;
+  border-radius: 6px;
+  margin: 24px auto 0;
+  cursor: pointer;
+}
+
+.back-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: white;
+}
