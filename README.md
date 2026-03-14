@@ -1,6 +1,6 @@
 # 👟 Catch & Kick
 
-This is our very first coding project. An interactive web interface featuring an instant win game, designed to collect and personalize user data in an engaging way. Currently in progress. 🚧
+This is our very first coding project, made at Hetic. An interactive web interface featuring an instant win game, designed to collect and personalize user data in an engaging way. Currently in progress. 🚧
 
 ## Overview
 
@@ -19,7 +19,7 @@ The project covers a variety of essential topics such as :
 * First step of the flow
 
 ### Préférences
-* Users share their preferences
+* Users share their sneaker preferences
 * Answers influence the final prize
 
 ### Jeu
@@ -34,7 +34,7 @@ The project covers a variety of essential topics such as :
 * Or a €50 prize for the lucky golden sticker winners
 
 ### Règlement
-* Terms and conditions. Currently in progress. 🚧
+* Terms and conditions
 * Available as a separate page
 
 ## Built With
@@ -47,12 +47,14 @@ The project covers a variety of essential topics such as :
 
 ```
 catch-and-kick/
-├── index.html          # Formulaire
-├── preferences.html
-├── jeu.html
-├── resultat.html
-├── reglement.html
+├── index.html              # Formulaire
+├── pages/
+│   ├── preferences.html
+│   ├── jeu.html
+│   ├── resultat.html
+│   └── reglement.html
 ├── assets/
-│   ├── styles/
-│   └── js/
+│   ├── css/
+│   ├── js/
+│   └── img/
 ```
