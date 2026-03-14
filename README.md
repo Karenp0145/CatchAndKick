@@ -26,7 +26,7 @@ The project covers a variety of essential topics such as :
 * A shoebox slides horizontally across the screen
 * Stickers fall randomly from the top
 * The goal is to catch them in the basket
-* Rarely, a golden sticker appears — catching it wins the jackpot (€50)
+* Rarely, a golden sticker appears, catching it wins the jackpot (€50)
 * Regular stickers result in a personalized discount based on preferences
 
 ### Résultat
