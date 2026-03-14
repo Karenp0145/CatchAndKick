@@ -1,6 +1,6 @@
 # 👟 Catch & Kick
 
-This is our very first coding project, made at Hetic. An interactive web interface featuring an instant win game, designed to collect and personalize user data in an engaging way. Currently in progress. 🚧
+This is our very first coding project. An interactive web interface featuring an instant win game, designed to collect and personalize user data in an engaging way. Currently in progress. 🚧
 
 ## Overview
 
